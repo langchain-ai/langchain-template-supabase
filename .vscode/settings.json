@@ -1,0 +1,9 @@
+{
+  "eslint.workingDirectories": [
+    "./nextjs",
+  ],
+  "deno.enablePaths": [
+    "./supabase"
+  ],
+  "deno.importMap": "./supabase/functions/import_map.json"
+}
