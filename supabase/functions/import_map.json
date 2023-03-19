@@ -1,0 +1,16 @@
+{
+  "imports": {
+    "http/": "https://deno.land/std@0.168.0/http/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.11.0",
+    "langchain": "https://esm.sh/*langchain@0.0.36?target=deno",
+    "langchain/": "https://esm.sh/*langchain@0.0.36&target=deno/",
+    "form-data": "./_shared/form-data.ts",
+    "openai": "https://esm.sh/*openai",
+    "eventsource-parser": "https://esm.sh/eventsource-parser",
+    "exponential-backoff": "https://esm.sh/exponential-backoff",
+    "gpt3-tokenizer": "https://esm.sh/gpt3-tokenizer",
+    "axios": "https://esm.sh/*axios",
+    "uuid": "https://esm.sh/uuid",
+    "yaml": "https://esm.sh/yaml"
+  }
+}

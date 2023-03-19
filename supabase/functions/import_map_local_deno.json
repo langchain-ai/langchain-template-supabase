@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "http/": "https://deno.land/std@0.168.0/http/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.10.0",
+    "langchain": "../../../langchainjs/langchain",
+    "langchain/": "../../../langchainjs/langchain/",
+    "form-data": "./_shared/form-data.ts",
+    "openai": "npm:openai",
+    "eventsource-parser": "npm:eventsource-parser",
+    "exponential-backoff": "npm:exponential-backoff",
+    "gpt3-tokenizer": "npm:gpt3-tokenizer",
+    "axios": "npm:axios"
+  }
+}
