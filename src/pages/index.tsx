@@ -1,9 +1,6 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import {
-  EventStreamContentType,
-  fetchEventSource,
-} from "@microsoft/fetch-event-source";
+import { fetchEventSource } from "@microsoft/fetch-event-source";
 import styles from "@/styles/Home.module.css";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { FormEvent, useCallback, useState } from "react";
@@ -21,13 +18,16 @@ export default function Home() {
     async (e: FormEvent) => {
       e.preventDefault();
 
+      // Prevent multiple requests at once
       if (inflight) return;
 
+      // Reset output
       setInflight(true);
       setOutput("");
 
       try {
         if (stream) {
+          // If streaming, we need to use fetchEventSource directly
           await fetchEventSource(
             `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/chat`,
             {
@@ -41,6 +41,7 @@ export default function Home() {
           );
           setInput("");
         } else {
+          // If not streaming, we can use the supabase client
           const { data } = await supabase.functions.invoke("chat", {
             body: { input },
           });
