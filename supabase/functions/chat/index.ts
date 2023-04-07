@@ -1,4 +1,3 @@
-// import "https://deno.land/x/xhr@0.2.1/mod.ts"; // for openai>axios
 import { serve } from "http/server.ts";
 import { ChatOpenAI } from "langchain/chat_models";
 import { LLMChain } from "langchain/chains";

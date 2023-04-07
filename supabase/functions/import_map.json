@@ -2,7 +2,7 @@
   "imports": {
     "http/": "https://deno.land/std@0.168.0/http/",
     "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.15.0",
-    "langchain": "https://esm.sh/langchain@0.0.49?target=deno",
-    "langchain/": "https://esm.sh/langchain@0.0.49&target=deno/"
+    "langchain": "https://esm.sh/langchain@0.0.50?target=deno",
+    "langchain/": "https://esm.sh/langchain@0.0.50&target=deno/"
   }
 }
