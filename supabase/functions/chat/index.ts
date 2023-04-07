@@ -51,7 +51,7 @@ serve(async (req) => {
       const chain = new LLMChain({ prompt, llm });
       // We don't need to await the result of the chain.run() call because
       // the LLM will invoke the callbackManager's handleLLMEnd() method
-      chain.run(input).catch((e) => console.error(e));
+      chain.call({ input }).catch((e) => console.error(e));
 
       return new Response(stream.readable, {
         headers: { ...corsHeaders, "Content-Type": "text/event-stream" },
@@ -61,7 +61,7 @@ serve(async (req) => {
       // chain.run() call and return it.
       const llm = new ChatOpenAI();
       const chain = new LLMChain({ prompt, llm });
-      const response = await chain.run(input);
+      const response = await chain.call({ input });
 
       return new Response(JSON.stringify(response), {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
