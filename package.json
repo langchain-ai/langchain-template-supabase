@@ -6,7 +6,8 @@
     "supabase:start": "supabase start",
     "supabase:stop": "supabase stop",
     "supabase:dev": "supabase functions serve --env-file supabase/.env",
-    "dev": "next dev --port 3100",
+    "supabase:deploy": "supabase secrets set --env-file ./supabase/.env && supabase functions deploy chat --import-map supabase/functions/import_map_deploy.json",
+    "dev": "next dev --port 3100 --hostname localhost",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
