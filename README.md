@@ -75,3 +75,9 @@ Then, deploy the functions:
 ```bash
 yarn supabase:deploy
 ```
+
+Optionally, if you're also using the Supabase Vector Store from LangcChain, you'll need to push the schema to the database:
+
+```bash
+supabase db push
+```
