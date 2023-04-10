@@ -4,51 +4,43 @@
 
 1. Clone this repo
 
-2. Install Supabase CLI
-
-```bash
-brew install supabase/tap/supabase
-```
-
-Other installation methods [here](https://supabase.com/docs/guides/cli).
-
-3. Install dependencies
+2. Install dependencies, including the Supabase CLI
 
 ```bash
 yarn
 ```
 
-4. Create frontend env file
+3. Create frontend env file
 
 ```bash
 cp .env.example .env
 ```
 
-5. Create supabase functions env file
+4. Create supabase functions env file
 
 ```bash
 echo "OPENAI_API_KEY=sk-xxx" > supabase/.env
 ```
 
-6. Start the supabase project
+5. Start the supabase project
 
 ```bash
 supabase start
 ```
 
-7. Start the supabase functions locally
+6. Start the supabase functions locally
 
 ```bash
 yarn supabase:dev
 ```
 
-8. Start the frontend locally
+7. Start the frontend locally
 
 ```bash
 yarn dev
 ```
 
-9. Open [http://localhost:3100](http://localhost:3100) with your browser to see the result.
+8. Open [http://localhost:3100](http://localhost:3100) with your browser to see the result.
 
 ## Deploy
 
