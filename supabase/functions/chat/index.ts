@@ -1,5 +1,5 @@
 import { serve } from "http/server.ts";
-import { ChatOpenAI } from "langchain/chat_models";
+import { ChatOpenAI } from "langchain/chat_models/openai";
 import { LLMChain } from "langchain/chains";
 import { CallbackManager } from "langchain/callbacks";
 import {
