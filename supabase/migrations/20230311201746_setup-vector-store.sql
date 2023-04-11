@@ -28,8 +28,3 @@ begin
 end;
 $$
 ;
-
--- Create an index to be used by the search function
-create index on documents
-  using ivfflat (embedding vector_cosine_ops)
-  with (lists = 100);
