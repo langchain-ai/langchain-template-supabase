@@ -10,6 +10,8 @@
 yarn
 ```
 
+**Note**: If you install the Supabase CLI using a different method you have to make sure you are on version 1.49.4 as more recent versions currently suffer from an issue which prevents this from working correctly.
+
 3. Create frontend env file
 
 ```bash
@@ -25,7 +27,7 @@ echo "OPENAI_API_KEY=sk-xxx" > supabase/.env
 5. Start the supabase project
 
 ```bash
-supabase start
+npx supabase start
 ```
 
 6. Start the supabase functions locally
@@ -53,13 +55,13 @@ yarn dev
 4. To deploy the supabase functions, first login to Supabase:
 
 ```bash
-supabase login
+npx supabase login
 ```
 
 Then, link your project:
 
 ```bash
-supabase link --project-ref <project-ref>
+npx supabase link --project-ref <project-ref>
 ```
 
 Then, deploy the functions:
