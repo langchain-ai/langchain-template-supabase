@@ -24,19 +24,21 @@ cp .env.example .env
 echo "OPENAI_API_KEY=sk-xxx" > supabase/.env
 ```
 
-5. Start the supabase project
+5. If not already running, start Docker. Learn how to do this for your OS [here](https://docs.docker.com/desktop/).
+
+6. Start the supabase project.
 
 ```bash
 npx supabase start
 ```
 
-6. Start the supabase functions locally
+7. Start the supabase functions locally
 
 ```bash
 yarn supabase:dev
 ```
 
-7. Start the frontend locally
+8. Start the frontend locally
 
 ```bash
 yarn dev
