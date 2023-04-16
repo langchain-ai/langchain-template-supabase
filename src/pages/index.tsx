@@ -45,7 +45,7 @@ export default function Home() {
           const { data } = await supabase.functions.invoke("chat", {
             body: { input },
           });
-          setOutput(data);
+          setOutput(data.text);
           setInput("");
         }
       } catch (error) {
