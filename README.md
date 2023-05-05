@@ -45,7 +45,7 @@ yarn supabase:dev
 yarn dev
 ```
 
-8. Open [http://localhost:3100](http://localhost:3100) with your browser to see the result.
+9. Open [http://localhost:3100](http://localhost:3100) with your browser to see the result.
 
 ## Deploy
 
