@@ -1,6 +1,7 @@
 # supabase-template
 
 ## Get started
+0. Make sure you have [Docker](https://www.docker.com/) installed and running
 
 1. Clone this repo
 
