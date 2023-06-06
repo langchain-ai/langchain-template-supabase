@@ -20,7 +20,7 @@ begin
   select
     id,
     content,
-    metadata,
+    jsonb_set(metadata,'{record_id}'::text[],('"' || id || '"')::jsonb, true) metadata,
     1 - (documents.embedding <=> query_embedding) as similarity
   from documents
   order by documents.embedding <=> query_embedding
